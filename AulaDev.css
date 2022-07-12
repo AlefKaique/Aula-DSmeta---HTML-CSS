@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+*{
+    font-family: 'Roboto' , sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color: white;
+}
+
+a, a:hover{
+    color: unset;
+}
+
+a:visited {
+    color: rgb(221, 230, 227);
+}
+
+header{
+    background: linear-gradient(180deg, #102347 0%, #181818 100%);
+    height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#bloco-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bloco-1 img {
+    width: 235px;
+}
+
+#bloco-1 h1{
+    margin-top: 15px;
+}
+
+#bloco-1 p {
+    font-size: 14px;
+    font-weight: 300;
+}
+#card-main{
+    background-color: #283142;
+    border-radius: 10px;
+    padding: 30px 10px;
+
+}
+
+#container-card{
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#section1{
+    padding: 40px 10px;
+}
+
+#venda-title{
+    color: #676FFF;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.input-inicio{
+    height: 46px;
+    width: 100%;
+    background-color: #1B2531;
+    border: 1px solid #384459;
+    border-radius: 5px;
+    color: #9AAABE;
+    padding: 0 20px;
+    font-size: 18px;
+}
+
+.div-input{
+    margin-bottom: 16px;
+    max-width: 300px;
+
+}
+
+#tabela{
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+#tabela thead{
+    height: 55px;
+    font-size: 16px;
+    color: #e9e9e9;
+    font-weight: 700;
+}
+
+#tabela tbody{
+    font-size: 14px;
+    font-weight: 400;
+    color: #cfcfcf;
+    text-align: center;
+}
+
+#tabela tbody tr{
+    height: 74px;
+    border-top: 1px solid #5f6e82;
+}
+
+#tabela tbody tr:hover > td{
+    background-color: #384459;
+}
+
+#tabela tbody tr:nth-child(odd){
+    background-color: #242c3b;
+}
+
+.bt-red{
+    height: 45px;
+    width: 45px;
+    background-color: rgba(255, 107, 114, 0.1);
+    border: 1px solid #ff6b72;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.bt-red img{
+    width: 19px;
+}
+
+#bt-red-container{
+    display: flex;
+    justify-content: center;
+}
+
+.show{
+    display: none;
+}
+
+@media (min-width: 576px) {
+    .show{
+        display: table-cell;
+    }
+
+    .card-main{
+        padding: 35px;
+    }
+
+    #tabela{
+        height: 55px;
+        font-size: 18px;
+    }
+}
+
+.show-max{
+    display: none;
+}
+
+@media (min-width: 970px){
+    .show-max{
+        display: table-cell;
+    }
+}
